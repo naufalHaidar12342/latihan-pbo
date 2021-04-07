@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoNilai",
+            "request": "launch",
+            "mainClass": "KonversiNilai_Mhs.DemoNilai",
+            "projectName": "KonversiNilai"
+        },
+        {
+            "type": "java",
+            "name": "Launch KonversiWaktu",
+            "request": "launch",
+            "mainClass": "KonversiWaktu.KonversiWaktu",
+            "projectName": "KonversiWaktu"
+        },
+        {
+            "type": "java",
+            "name": "Launch variables",
+            "request": "launch",
+            "mainClass": "variables"
+        }
+    ]
+}
