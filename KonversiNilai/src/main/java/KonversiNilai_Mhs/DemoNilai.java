@@ -21,39 +21,41 @@ public class DemoNilai {
         // memanggil kelas 'Nilai'
         // lewat variabel 'aksesKelasNilai'
         Nilai aksesKelasNilai = new Nilai();
+        try {
+            // meminta input nim (nomor induk mahasiswa)
+            System.out.println("=======INPUT DATA=======");
+            System.out.print("NIM :");
+            aksesKelasNilai.nim = mintaInput.next();
 
-        // meminta input nim (nomor induk mahasiswa)
-        System.out.println("=======INPUT DATA=======");
-        System.out.print("NIM :");
-        aksesKelasNilai.nim = mintaInput.next();
+            // meminta input nama
+            System.out.print("Nama :");
+            mintaInput.nextLine();
+            aksesKelasNilai.nama = mintaInput.nextLine();
 
-        // meminta input nama
-        System.out.print("Nama :");
-        mintaInput.nextLine();
-        aksesKelasNilai.nama = mintaInput.nextLine();
+            // meminta input nilai tugas
+            System.out.print("Nilai Tugas :");
+            aksesKelasNilai.nilaiTugas = mintaInput.nextInt();
 
-        // meminta input nilai tugas
-        System.out.print("Nilai Tugas :");
-        aksesKelasNilai.nilaiTugas = mintaInput.nextInt();
+            //
+            System.out.print("Nilai UTS :");
+            aksesKelasNilai.nilaiUTS = mintaInput.nextInt();
 
-        //
-        System.out.print("Nilai UTS :");
-        aksesKelasNilai.nilaiUTS = mintaInput.nextInt();
+            //
+            System.out.print("Nilai UAS :");
+            aksesKelasNilai.nilaiUAS = mintaInput.nextInt();
+            System.out.println();
 
-        //
-        System.out.print("Nilai UAS :");
-        aksesKelasNilai.nilaiUAS = mintaInput.nextInt();
-        System.out.println();
+            // mengakses method/function
+            aksesKelasNilai.hitungNilaiAkhir();
+            aksesKelasNilai.getNilaiHuruf();
+            aksesKelasNilai.getPredikat();
 
-        // mengakses method/function
-        aksesKelasNilai.hitungNilaiAkhir();
-        aksesKelasNilai.getNilaiHuruf();
-        aksesKelasNilai.getPredikat();
+            // mengakses method "cetakNilai"
+            aksesKelasNilai.cetakNilai();
+        } finally {
+            // menutup input
+            mintaInput.close();
+        }
 
-        // mengakses method "cetakNilai"
-        aksesKelasNilai.cetakNilai();
-
-        // menutup input
-        mintaInput.close();
     }
 }
