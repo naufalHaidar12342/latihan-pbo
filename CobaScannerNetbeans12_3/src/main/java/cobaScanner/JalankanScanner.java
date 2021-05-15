@@ -15,5 +15,6 @@ public class JalankanScanner {
         
         ambilKelas.ambilNama();
         System.out.println(ambilKelas.nama);
+
     }
 }
